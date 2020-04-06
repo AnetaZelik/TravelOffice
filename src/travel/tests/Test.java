@@ -1,14 +1,15 @@
-package pl.altkom.travel;
+package travel.tests;
 
-import pl.altkom.travel.exceptions.NoSuchCustomerException;
-import pl.altkom.travel.exceptions.NoSuchTripException;
+import travel.*;
+import travel.exceptions.NoSuchCustomerException;
+import travel.exceptions.NoSuchTripException;
 
 public class Test {
     public static void main(String[] args) {
-        Customer customer = new Customer("Paweł");
+        Customer customer = new Customer("John");
 
-        Address addres = new Address("Os. Strusia", "Kraków", "31-900");
-        customer.setAddress(addres);
+        Address address = new Address("Os. Strusia", "Cracow", "31-900");
+        customer.setAddress(address);
 
         Date start = new Date(2019, 8, 15);
         Date end = new Date(2019, 8, 31);
@@ -60,7 +61,7 @@ public class Test {
         Customer customer1;
 
         try {
-            customer1 = office.findCustomerByName("Paweł");
+            customer1 = office.findCustomerByName("John");
             office.removeCustomer(customer1);
         } catch (NoSuchCustomerException e) {
             e.printStackTrace();

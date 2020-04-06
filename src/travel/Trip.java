@@ -1,4 +1,4 @@
-package pl.altkom.travel;
+package travel;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public abstract class Trip {
     }
 
     public String toString() {
-        return String.format("Wycieczka do %s, od %s do %s, za %f",
+        return String.format("Trip to %s, from %s to %s, for %f",
                 destination,
                 start.toString(),
                 end.toString(),

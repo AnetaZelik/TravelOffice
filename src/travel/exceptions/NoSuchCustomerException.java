@@ -1,4 +1,4 @@
-package pl.altkom.travel.exceptions;
+package travel.exceptions;
 
 public class NoSuchCustomerException extends Exception {
     public NoSuchCustomerException(String message) {

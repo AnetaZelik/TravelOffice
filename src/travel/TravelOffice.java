@@ -1,7 +1,7 @@
-package pl.altkom.travel;
+package travel;
 
-import pl.altkom.travel.exceptions.NoSuchCustomerException;
-import pl.altkom.travel.exceptions.NoSuchTripException;
+import travel.exceptions.NoSuchCustomerException;
+import travel.exceptions.NoSuchTripException;
 
 import java.util.*;
 

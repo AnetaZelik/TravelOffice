@@ -1,4 +1,4 @@
-package pl.altkom.travel;
+package travel;
 
 import java.util.Objects;
 

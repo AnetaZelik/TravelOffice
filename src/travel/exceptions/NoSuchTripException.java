@@ -1,4 +1,4 @@
-package pl.altkom.travel.exceptions;
+package travel.exceptions;
 
 public class NoSuchTripException extends Exception {
     public NoSuchTripException(String message) {
